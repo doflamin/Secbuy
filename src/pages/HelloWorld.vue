@@ -1,21 +1,21 @@
 <template>
  <el-row>
-  <el-button @click="jump(2)">{{msg}}</el-button>
+  <NavHeader title='ttt' />
 </el-row>
 </template>
 
 <script>
+import NavHeader from '../components/navheader.vue'
 export default {
   name: 'HelloWorld',
+  components:{NavHeader},
   data () {
     return {
       msg: '跳转到测试页面'
     }
   },
   methods:{
-    jump(params){
-      this.$router.push('/test');
-    }
+   
   }
 }
 </script>

@@ -1,6 +1,6 @@
 <template>
  <el-row>
-  <el-button @click="jump(2)">{{msg}}</el-button>
+  <el-button @click="jump">{{msg}}</el-button>
 </el-row>
 </template>
 
@@ -13,7 +13,7 @@ export default {
     }
   },
   methods:{
-    jump(params){
+    jump(){
       this.$router.push('/');
     }
   }
