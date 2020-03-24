@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/pages/HelloWorld'
-import Test from '@/pages/Test'
+import Main from '@/pages/main'
+import Search from '@/pages/search'
 
 
 Vue.use(Router)
@@ -10,13 +10,13 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      name: 'Main',
+      component: Main
     },
     {
-      path: '/test',
-      name: 'test',
-      component: Test
+      path: '/Search',
+      name: 'Search',
+      component: Search
     }
   ]
 })

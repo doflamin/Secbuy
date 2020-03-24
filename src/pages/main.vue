@@ -1,11 +1,11 @@
 <template>
  <el-row>
-  <NavHeader title='ttt' />
+  <NavHeader title='主标题' />
 </el-row>
 </template>
 
 <script>
-import NavHeader from '../components/navheader.vue'
+import NavHeader from '../components/navheader/navheader.vue'
 export default {
   name: 'HelloWorld',
   components:{NavHeader},
