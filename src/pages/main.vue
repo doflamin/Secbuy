@@ -15,26 +15,23 @@ export default {
   data () {
     return {
       msg: '跳转到测试页面',
-      single:1,
     }
   },
   methods:{
     add(){
-      this.single += 1;
+      this.$store.commit('increment');
     }
   },
   computed:{
+    single () {
+      return this.$store.state.count
+    },
     double () {
-      return this.single *2
+      return this.$store.getters.double
     }
-  },
-  //当double这个值改变，就会触发这个函数
-  watch:{
-    double(){
-      console.log('---',this.double);
 
-    }
-  }
+  },
+
 }
 </script>
 
